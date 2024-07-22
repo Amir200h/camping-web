@@ -1,5 +1,7 @@
 :root {
   --orange: #e76f51;
+  --white: #ffffff;
+  --black: #000000;
 }
 html {
   box-sizing: border-box;
@@ -49,17 +51,61 @@ body {
 }
 .menu-mobile {
   display: none;
+  padding: 2rem;
+  background-color: var(--white);
+  position: fixed;
+  width: 0;
+  height: 100vh;
+  left: -25rem;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  transition: all 250ms ease-in-out;
+}
+.menu-mobile--open {
+  left: 0;
+  width: 25rem;
 }
 .menu-mobile__items {
+  margin-bottom: 3rem;
 }
-.menu-mobile__item {
+.menu__mobile__item {
+  margin-bottom: 1rem;
+  background-color: var(--orange);
+  border-radius: 1rem;
 }
 .menu-mobile__link {
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--white);
+  display: block;
+}
+.menu-mobile__link:hover {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--orange);
+  border-radius: 1rem;
 }
 .mobile__links {
+  display: flex;
+  border: 1px solid var(--orange);
+  border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;
 }
 .mobile__link {
+  flex-basis: 50%;
+  text-decoration: none;
 }
+.mobile__link:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  overflow: hidden;
+}
+.mobile__link:nth-child(2) {
+  border-left: 1px solid var(--orange);
+}
+
 .nav__links {
   display: none;
 }
