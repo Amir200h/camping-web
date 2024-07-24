@@ -2,6 +2,7 @@
   --orange: #e76f51;
   --white: #ffffff;
   --black: #000000;
+  --BODY-bg: #FAF4F2;
 }
 html {
   box-sizing: border-box;
@@ -17,6 +18,26 @@ body {
   line-height: 1.6;
   font-size: 1.6rem;
   font-family: "Roboto";
+  background-color: var(--BODY-bg);
+}
+
+
+ /* 
+ ========================================
+          helper style
+========================================
+ */
+.btn{
+  width: 13rem;
+  height: 4rem;
+  background-color: var(--white);
+  display: block;
+  border-radius: 3rem;
+  text-decoration: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Start header style */
@@ -25,6 +46,9 @@ body {
     url(../images/header-bg.jpg);
   background-position: center;
   background-size: cover;
+  height: 80vh;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
 }
 .nav {
   padding: 1rem 0;
@@ -40,15 +64,30 @@ body {
   width: 100%;
   height: 100%;
 }
+.nav__wrapper{
+  display: flex;
+  align-items: center;
+}
 .menu {
   display: none;
+  display: flex;
 }
 .menu__links {
+  display: flex;
+  
 }
 .menu__item {
+  margin-left: 2rem;
 }
 .menu__link {
+  text-decoration: none;
+  color: #D2D2D2;
+  transition: color 150ms ease-in;
 }
+.menu__link:hover {
+  color: var(--white);
+}
+
 .menu-mobile {
   display: none;
   padding: 2rem;
@@ -66,26 +105,49 @@ body {
   left: 0;
   width: 25rem;
 }
+.menu-mobile__title{
+  width: 100%;
+  height: 5.5rem;
+  margin: 0;
+  display: flex;
+
+  align-items: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--orange);
+  margin-bottom: 1.5rem;
+}
+.menu-mobile__logo{
+  width: 5rem;
+  height: 5rem;
+  padding-right: 1rem;
+}
 .menu-mobile__items {
   margin-bottom: 3rem;
 }
-.menu__mobile__item {
-  margin-bottom: 1rem;
-  background-color: var(--orange);
-  border-radius: 1rem;
-}
+
 .menu-mobile__link {
   padding: 1rem;
   text-decoration: none;
   color: var(--white);
   display: block;
+  transition: all 250ms ease-in-out;
+  position: relative;
 }
-.menu-mobile__link:hover {
-  background-color: var(--white);
-  color: var(--black);
+.menu__mobile__item {
+  margin-bottom: 1rem;
+  background-color: var(--orange);
   border: 1px solid var(--orange);
   border-radius: 1rem;
 }
+
+.menu-mobile__link:hover {
+  padding-left: 2rem;
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 1rem;
+  transition: all 250ms ease-in-out;
+}
+
 .mobile__links {
   display: flex;
   border: 1px solid var(--orange);
@@ -107,9 +169,22 @@ body {
 }
 
 .nav__links {
-  display: none;
+  margin-left: 1rem;
 }
 .nav__link {
+  font-family: 'Roboto Medium';
+  color: var(--white);
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+}
+
+.nav__link:nth-child(2) {
+  border: 1px solid var(--white);
+  border-radius: 2rem;
+}
+.nav__link:nth-child(2):hover {
+  background-color: var(--white);
+  color: var(--orange);
 }
 .nav__btn {
   cursor: pointer;
@@ -156,3 +231,75 @@ body {
 }
 
 /* finish header style */
+
+ /* 
+ ============================
+    header content style
+ ============================
+ */
+ .header-content{
+  text-align: center;
+  color: var(--white);
+  margin-top: 5rem;
+  
+ }
+ .header-content__title{
+  font-size: 6rem;
+  line-height: 6rem;
+  font-family: 'Archivo Black';
+  max-width: 41.4rem;
+  margin: 0 auto 0 auto;
+ }
+ .header-content__desc{
+  font-size: 1.5rem;
+  max-width: 26.5rem;
+  margin: 0 auto 0 auto;
+ }
+ .header-content__btn{
+  font-size: 1.5rem;
+  background-color: var(--orange);
+  color: var(--white);
+  margin-top: 2rem;
+ }
+
+
+
+ /* 
+ ======================================
+          services style
+ ======================================
+ */
+
+. main{
+
+ }
+.services{
+  display: flex;
+  flex-wrap: wrap;
+  margin:-10rem -1rem 0 -1rem;
+}
+.service{
+background-color: var(--white);
+width: 20rem;
+height: 25rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 3rem;
+text-align: center;
+flex-grow: 1;
+margin: 0 1rem 1rem 1rem;
+}
+.service__img{
+display: block;
+}
+.service__title{
+  font-size: 1.5rem;
+  font-family: "Archivo Black";
+  padding: 1.5rem 1rem 1rem 1rem;
+}
+.service__desc{
+  padding: 1rem;
+  width: 20rem;
+}
