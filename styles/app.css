@@ -290,6 +290,7 @@ border-radius: 3rem;
 text-align: center;
 flex-grow: 1;
 margin: 0 1rem 1rem 1rem;
+padding: 0 2rem;
 }
 .service__img{
 display: block;
@@ -300,8 +301,9 @@ display: block;
   padding: 1.5rem 1rem 1rem 1rem;
 }
 .service__desc{
-  padding: 1rem;
-  width: 20rem;
+  /* padding: 1rem; */
+  /* width: 20rem; */
+  font-size: 1.8rem;
 }
 
 
@@ -418,4 +420,83 @@ display: block;
 .destination__btn:hover{
   color: var(--white);
   background-color: var(--orange);
+}
+
+
+/*====================================
+      newsletters style
+====================================*/
+.newsletters{
+  margin: 6rem 0;
+  background-color: #F8E1DB;
+  text-align: center;
+  border-radius: 3rem;
+  padding: 0 2rem;
+}
+.Newsletters-content{
+display: flex;
+flex-direction: column-reverse;
+/* justify-content: space-between; */
+align-items: center;
+/* flex-wrap: wrap; */
+margin-left: -1rem;
+margin-right: -1rem;
+
+}
+.Newsletters-content__right{
+
+  /* flex-basis: 50%; */
+}
+.Newsletters-content__title{
+  font-family: "Archivo Black";
+  font-size: 3rem;
+  margin: 0 auto;
+}
+.Newsletters-content__desc{
+  font-family: "Roboto Medium";
+  font-size: 1.2rem;
+  max-width: 35rem;
+  margin: 0 auto;
+}
+.Newsletters-content_img{
+ 
+}
+.Newsletters-content_img--icon{
+  width: 100%;
+  /* height: 100%; */
+}
+
+
+/* ----------- */
+.newsletters__email-box{
+  max-width: 48rem;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  background-color: var(--white);
+  padding: 0 1.5rem;
+  border-radius: 1.5rem;
+  margin-top: 1rem;
+}
+.newsletters__email{
+ flex-shrink: 0;
+}
+.newsletters__input{
+  height: 100%;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+.newsletters__submit{
+  
+  outline: none;
+  border: none;
+  background-color: var(--orange);
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
