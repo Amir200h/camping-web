@@ -7,6 +7,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 10px */
+  scroll-behavior: smooth;
 }
 *,
 *:after,
@@ -499,4 +500,100 @@ margin-right: -1rem;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+}
+
+
+/*====================================
+      footer style
+====================================*/
+
+.footer{
+  background-color: #F8E1DB;
+  color: #3B3735;
+  border-top-left-radius: 6rem;
+  border-top-right-radius: 6rem;
+  padding: 6rem 0;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+.arow-top{
+  background-color: var(--white);
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  position: absolute;
+  top: -8rem;
+  right: 0;
+}
+.arow-top > .container{
+  
+}
+.wrapper__main{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.wrapper-left{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  flex-wrap: wrap;
+}
+.footer__content{
+  flex-grow: 1;
+}
+.footer__content__title{
+  font-family: "Archivo Black";
+  margin-bottom: 0.5rem;
+  max-width: 37rem;
+}
+.footer__content__desc{
+  font-size: 1rem;
+  max-width: 35rem;
+}
+.footer__app{
+  margin-top: 3rem;
+  flex-grow: 1;
+  
+}
+.footer__app__title{
+  font-family: "Archivo Black";
+  margin-bottom: 2rem;
+}
+.footer__app__link{
+
+}
+.footer__app__img{
+
+}
+
+.wrapper-right{
+  display: flex;
+  justify-content: center;
+  flex-basis: 50%;
+  flex-wrap: wrap;
+}
+.footer_links{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  flex-grow: 1;
+}
+.footer_links__title{
+  font-family: "Archivo Black";
+  margin-bottom: 0.5rem;
+}
+.footer__list{
+  display: flex;
+  flex-direction: column;
+}
+.footer__item{
+ /* display: inline-block; */
+ font-size: 1rem;
+}
+.footer_link{
+
 }
